@@ -13,12 +13,11 @@ while iterator.hasNext do
 	puts "SNP nr: #{nr}"
 	next_variant = iterator.next
 	alleles =  next_variant.getAlleles
+
 	alleles_it = alleles.iterator
 	while alleles_it.hasNext
-		puts "\tallele: #{alleles_it.next.getDisplayBases}"
+		puts "\tallele bases: #{alleles_it.next.getDisplayBases}"
 	end
 
 	nr = nr + 1
 end
-
-puts "nr este #{nr}"
