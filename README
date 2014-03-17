@@ -1,1 +1,7 @@
-This a wrapper over picard library writen in JRuby
+	This is a wrapper over picard library writen in JRuby for a simple manipulating
+of a VCF file. 
+	The script is taking as parameter a ".vcf" file, which is opened
+using "VCFFileReader" class. Then, using the iterator from this class, the
+script iterates thorugh all the records of the file, for each of the record is
+getting the alleles and for each of the allele is printing the DNA bases
+segregating in this allele.
